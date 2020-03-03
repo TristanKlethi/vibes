@@ -1,0 +1,86 @@
+
+body {
+    background-color: lightgray;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.countainer {
+    margin: auto;
+    width: 90%;
+}
+
+#nav {
+    display: flex;
+}
+
+#nav>div {
+    flex: 1;
+}
+
+
+#gallery {
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+#banniere {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.centre {
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centre>article {
+    flex: 1;
+    width: 32%;
+    padding: 0.5em;
+}
+
+.definition i{
+    margin: 0.5rem;
+}
+
+dl{
+    text-align: left;
+}
+
+dd {
+    margin-left: 1.33rem;
+    margin-bottom: 1rem;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+form>.formulaire {
+    width: 50%;
+    flex: 1;
+}
+
+.formulaire>input {
+    width: 20rem;
+}
+
+#pages {
+    display: flex;
+}
+
+#pages>div {
+    flex: 1;
+}

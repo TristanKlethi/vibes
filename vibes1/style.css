@@ -1,0 +1,261 @@
+
+:root {
+    --red-color: red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: coral;
+    /* background-color: #36096d;
+    background-image: linear-gradient(3deg, #36096d 0%, #37d5d6 44%,#36096d 100%); */
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.btn-border {
+    border: 1px var(--red-color) solid; 
+}
+
+.btn-text {
+    color: var(--red-color);
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+}
+
+nav {
+    justify-content: space-evenly;
+    width: 45%;
+    height: 10%;
+}
+
+nav a {
+    display: block;
+    float: left;
+    /* color: lightskyblue; */
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.logoHeader {
+    width: 45%;
+    height: 10%;
+    margin: 0;
+}
+
+.logo {
+    width: 30%;
+    object-fit: cover;
+}
+
+main {
+    width: 90%;
+}
+
+.presentation, .infos, .galerie, .avis, .parallaxe, .formulaire, .about, .footer {
+    width: 100%;
+    text-align: center;
+    margin: 0em;
+    border: 1px lightgray solid;
+}
+
+.presentation, .parallaxe, .about{
+    color: white;
+    background-color: black;
+}
+
+.presentation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 25%;
+}
+
+.presentationTexte {
+    /* color: goldenrod; */
+    text-shadow: 1px 1px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.presentationTexte p{
+    margin: 0.5rem;
+}
+
+.aVoir {
+    cursor: pointer;
+}
+
+.infos {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left, .center, .infos aside {
+    z-index: 2;
+}
+
+.left, .center{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 30%;
+}
+
+.center {
+    width: 35%;
+}
+
+.center i{
+    margin: 0.5rem;
+}
+
+dl{
+    text-align: left;
+}
+
+dd {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.infos aside{
+    text-align: left;
+    width: 30%;
+}
+
+.infos .definition {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infos .definition dl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galerie {
+    height: 25%;
+    background-color: whitesmoke;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.galerie>figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0.5em;
+}
+
+.avis {
+    background-color: whitesmoke;
+}
+
+.avis1, .avis2, .avis3 {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.avis h2 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.parallaxe{
+    height: 15%;
+}
+
+.conteneur {
+    width: 25%;
+    object-fit: cover;
+}
+
+figure div {
+    background-color: black;
+}
+
+#slide {
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+}
+
+.parallaxe>div{
+    height: 100%;
+}
+
+.formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.formulaire form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulaire .gauche, .formulaire .droite{
+    width: 40%;
+    text-align: left;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.envoi {
+    width: 100%;
+}
+
+.formulaire input {
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+.formulaire .message {
+    height: 5rem;
+}
+
+.formulaire .submit {
+    width: 4rem;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.about div{
+    width: 30%;
+}
+
+.about div p {
+    text-align: left;
+}
+
+.footer{
+    height: 5%;
+}
