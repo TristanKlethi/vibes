@@ -4,8 +4,14 @@ body {
     height: 100%;
 }
 
+hr {
+        width: 50px;
+    border-color: black;
+}
+
 button {
     text-transform: uppercase;
+    margin: 1em 0;
 }
 
 .countainer {
@@ -21,10 +27,36 @@ button {
     flex: 1;
 }
 
-
-#gallery {
-    height: 100px;
+.gallery-media{
+    display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
+}
+
+.gallery-media>div{
+    flex: 1;
+    display: flex;
+}
+
+.gallery-media>div>*{
+    flex: 1;
+}
+
+.gallery-nav{
+    border-bottom: black 1px solid;
+}
+
+.gallery-nav>div {
+    width: 45%;
+}
+
+.gallery-nav-list {
+    text-align: left;
+    padding: 1em;
+}
+
+.gallery-nav-btn {
+    text-align: right;
 }
 
 #banniere {
@@ -36,7 +68,6 @@ button {
 .centre {
     padding: 0 2em;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .centre>article {
@@ -64,6 +95,61 @@ dd {
     flex-wrap: wrap;
 }
 
+#testimonials {
+    flex-wrap: wrap;
+}
+
+#testimonials>h2 {
+    text-align: center;
+    flex:1;
+}
+
+.avis {
+    width: 100%;
+}
+
+.avis>.avis1, .avis>.avis2, .avis>.avis3{
+    width: 100%;
+    height: 6em;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.avis img {
+    padding: 0 1em 0 0;
+}
+
+.avis>div{
+    border-bottom: black 1px solid;
+}
+
+.avis>.avis3{
+    border: none;
+}
+
+blockquote {
+    width: 95%;
+    margin: 0;
+}
+
+blockquote p{
+    font-style: italic;
+}
+
+blockquote:nth-child(odd) {
+    text-align: right;
+}
+
+.avis img:nth-child(even) {
+    padding: 0 0 0 1em;
+}
+
+.become {
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
 #buy {
     height: 450px;
     display: flex;
@@ -83,22 +169,17 @@ dd {
     padding: 0 2em;
 }    
 
-form {
-    display: flex;
-    justify-content: space-between;
+#contact>h2 {
+    text-align: center;
 }
 
-form>.formulaire {
-    flex: 1;
+form .centre>div{
+    width: 50%;
 }
 
-/* .formulaire>input {
-    width: 20rem;
-} */
-
-form label, form input, form textarea {
+form label, form input, form textarea,.newsletter input {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     height: 2em;
     line-height: 1.5em;
     vertical-align: bottom;
@@ -110,18 +191,54 @@ form label {
     line-height: 1em;
 }
 
-form input, form textarea {
-    height: 6em;
+form textarea {
+    height: 6.9em;
 }
 
 button[type='submit']{
     margin-top: 1em;
 }
 
-#pages {
-    display: flex;
-}
-
 #pages>div {
     flex: 1;
+    padding: 0.5em 1em;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carre {
+    padding: 1em;
+}
+
+.rotate {
+    
+    animation-duration: 3s;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
