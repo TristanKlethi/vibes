@@ -1,12 +1,85 @@
 
-body {
-    background-color: lightgray;
+:root{
+    --color-pink: fuchsia;
+}
+
+.back{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     height: 100%;
 }
 
+.back1 {
+    background: rgb(251,249,63);
+    background: radial-gradient(circle, rgba(251,249,63,1) 0%, rgba(70,242,252,1) 100%);
+    height: 100%;
+}
+
+.back2{
+    background: rgb(235,175,45);
+    background: radial-gradient(circle, rgba(235,175,45,1) 0%, rgba(25,157,17,1) 100%);
+    height: 100%;
+}
+
+.back3 {
+    background: rgb(208,208,208);
+    background: radial-gradient(circle, rgba(208,208,208,1) 10%, rgba(0,0,0,1) 100%);
+    height: 100%;
+}
+
+
+#color {
+    background-color: black;
+    border: none;
+    position: sticky;
+    top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#color>i {
+    color: whitesmoke;
+}
+
+.color-div {
+    display: none;
+}
+
+.color-div_active {
+    display: block; 
+    background-color: black;  
+}
+
+
+#about, #testimonials, #contact, .gallery-nav {
+    background-color: white;
+}
+
+#pages {
+    color: white;
+    background-color: black;
+}
+
 hr {
-        width: 50px;
+    width: 50px;
+    height: 0;
     border-color: black;
+    margin-top: 0.3em;
+    border-color: var(--color-pink);
+    background-color: var(--color-pink);
+}
+
+h2, h4 {
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.h4 {
+    margin: 0.5em 0 0 0;
 }
 
 button {
@@ -14,9 +87,47 @@ button {
     margin: 1em 0;
 }
 
+.couleur{
+    color: var(--color-pink);
+}
+
+.btn-border {
+    border-color: var(--color-pink);
+    background-color: transparent;
+}
+
+.btn-color {
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.btn-text {
+    color: var(--color-pink);
+}
+
+.btn-border-white {
+    border-color:white;
+    background-color: transparent;
+}
+
+.btn-text-white {
+    color: white;
+}
+
 .countainer {
     margin: auto;
     width: 90%;
+}
+
+a {
+    padding: 0 0 0 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
 }
 
 #nav {
@@ -25,6 +136,43 @@ button {
 
 #nav>div {
     flex: 1;
+}
+
+.nav-logo>img {
+    height: 90px;
+}
+
+.nav-link {
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+#about-accordion i {
+    padding-right: 1em;
+}
+
+#about-accordion p {
+    padding-left: 2.5em;
+}
+
+#about-accordion .accordion-text {
+    display: none;
+}
+
+#about-accordion .active .accordion-text {
+    display: block;
+}
+
+a.toggle {
+    width: 100%;
+    display: block;
+    color: black;
+    padding: 0;
+    border-radius: 0.15em;
+    border-color: lightgrey;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .gallery-media{
@@ -38,12 +186,13 @@ button {
     display: flex;
 }
 
-.gallery-media>div>*{
+.gallery-media>div *{
     flex: 1;
+    width: 25%;
 }
 
 .gallery-nav{
-    border-bottom: black 1px solid;
+    border-bottom: lightgray 1px solid;
 }
 
 .gallery-nav>div {
@@ -60,9 +209,15 @@ button {
 }
 
 #banniere {
+    height: 30em;
+    background: url(./img/image2.jpg) center;
+    background-size: cover;
+}
+
+.banniere-text {
     text-align: center;
-    color: white;
-    background-color: black;
+    padding-top: 20em;
+    /* color: #8729B9; */
 }
 
 .centre {
@@ -121,7 +276,7 @@ dd {
 }
 
 .avis>div{
-    border-bottom: black 1px solid;
+    border-bottom: lightgray 1px solid;
 }
 
 .avis>.avis3{
@@ -171,6 +326,8 @@ blockquote:nth-child(odd) {
 
 #contact>h2 {
     text-align: center;
+    margin: 0;
+    padding: 1em 0;
 }
 
 form .centre>div{
@@ -213,32 +370,3 @@ button[type='submit']{
     padding: 1em;
 }
 
-.rotate {
-    
-    animation-duration: 3s;
-    animation-name: rotation;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotation {
-    
-    0%{
-        transform: rotate(0deg);
-    }
-
-    25%{
-        transform: rotate(90deg);
-    }
-
-    50%{
-        transform: rotate(180deg);
-    }
-
-    75%{
-        transform: rotate(270deg);
-    }
-
-    100%{
-        transform: rotate(360deg);
-    }
-}

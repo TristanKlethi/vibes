@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="back">
+    <button id="color"><i class="fas fa-tint"></i>
+        <div class="color-div_active">
+            <button id="color" class="back"><i class="fas fa-tint"></i></button>
+            <button id="color" class="back1"><i class="fas fa-tint"></i></button>
+            <button id="color" class="back2"><i class="fas fa-tint"></i></button>
+            <button id="color" class="back3"><i class="fas fa-tint"></i></button>
+        </div>
+    </button>
     <div class="countainer">
         <head>
             <section id="nav">
                 <div class="nav-logo">
-
+                    <img src="./img/logo-horizon-zero-dawn.png" alt="Logo Horizon Zero Down">
                 </div>
                 <div class="nav-link">
                     <a href="">Home</a>
@@ -24,10 +32,12 @@
                 </div>
             </section>
             <section id="banniere">
-                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est optio animi, 
-                    obcaecati harum perferendis inventore?</p>
-                <button> Read more</button>
+                <div class="banniere-text">
+                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est optio animi, 
+                        obcaecati harum perferendis inventore?</p>
+                    <button class="btn-border btn-text-white"> Read more</button>
+                </div>
             </section>
         </head>
         <main>
@@ -39,34 +49,34 @@
                             Id vel nobis itaque neque reiciendis iure blanditiis cum autem molestiae impedit.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Voluptate quaerat soluta voluptatibus labore reiciendis sit possimus 
-                            <a href="">laboriosam at nam</a>  deleniti? </p>
+                            <span class="couleur">laboriosam at nam </span>deleniti? </p>
                         </article>
                     <article class="about-center">
                         <h3>Lorem ipsum dolor sit amet.</h3>                   
                         <dl class="defition">
-                            <dt><i class="fab fa-wordpress-simple"></i> Lorem, ipsum dolor.</dt>
+                            <dt><i class="fab fa-wordpress-simple couleur"></i> Lorem, ipsum dolor.</dt>
                             <dd>Lorem ipsum dolor sit amet consectetur 
                                 adipisicing elit. Optio, id.</dd>
-                            <dt><i class="fas fa-cog"></i> Lorem, ipsum dolor.</dt>
+                            <dt><i class="fas fa-cog couleur"></i> Lorem, ipsum dolor.</dt>
                             <dd>Lorem ipsum dolor sit amet consectetur 
                                 adipisicing elit. Optio, id.</dd>
-                            <dt><i class="far fa-paper-plane"></i> Lorem, ipsum dolor.</dt>
+                            <dt><i class="far fa-paper-plane couleur"></i> Lorem, ipsum dolor.</dt>
                             <dd>Lorem ipsum dolor sit amet consectetur 
                                 adipisicing elit. Optio, id.</dd>
                         </dl>
                     </article>
-                    <article class="about-accordion">
-                        <div class="about-accordion case1">
-                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
+                    <article id="about-accordion">
+                        <div class="case active">
+                            <a class="toggle" href="javascript:void(0);"><h3 class="accordion-header"><i id="accordion-logo" class="fas fa-minus couleur"></i>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                            <p class="accordion-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
                         </div>
-                        <div class="about-accordion case2">
-                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
+                        <div class="case">
+                            <a class="toggle" href="javascript:void(0);"><h3 class="accordion-header"><i id="accordion-logo" class="fas fa-plus couleur"></i>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                            <p class="accordion-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
                         </div>
-                        <div class="about-accordion case3">
-                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
+                        <div class="case">
+                            <a class="toggle" href="javascript:void(0);"><h3 class="accordion-header"><i id="accordion-logo" class="fas fa-plus couleur"></i>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                            <p class="accordion-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique obcaecati rem hic omnis aspernatur!</p>
                         </div>
                     </article> 
                 </div>
@@ -75,16 +85,16 @@
             <section id="gallery">
                 <div class="gallery-media">
                     <div class="haut">
-                        <img src="a" alt="">
+                        <img src="./img/image6.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
                         <video src="a"></video>
-                        <audio src="a"></audio>
-                        <img src="a" alt="">
+                        <img src="./img/image5.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
+                        <img src="./img/image4.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
                     </div>
                     <div class="bas">
-                        <audio src="a"></audio>
-                        <img src="a" alt="">
+                        <img src="./img/image3.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
+                        <img src="./img/image7.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
                         <video src="a"></video>
-                        <audio src="a"></audio>
+                        <img src="./img/image8.jpg" alt="Image Horizon Zero Down de Ryan Spinney">
                     </div>
                 </div>
                 <div class="gallery-nav centre">
@@ -95,7 +105,7 @@
                         <a href="">Video</a>
                     </div>
                     <div class="gallery-nav-btn">
-                        <button>Load more</button>
+                        <button class="btn-border btn-text">Load more</button>
                     </div>
                 </div>
             </section>
@@ -125,7 +135,7 @@
                         </blockquote>
                     </div>
                     <div class="become">
-                        <button>Become our client</button>
+                        <button class="btn-border btn-text">Become our client</button>
                     </div>
                 </div>
             </section>
@@ -135,7 +145,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Debitis fuga voluptates omnis voluptas necessitatibus id ipsum corrupti sunt asperiores <br>
                         cumque enim quasi, sequi quos numquam sed. Perspiciatis dicta quos harum.</p>
-                        <button>Buy Vibes</button>
+                        <button class="btn-border btn-text-white">Buy Vibes</button>
                     </div>
             </section>
             <section id="contact">
@@ -155,7 +165,7 @@
                                 <input type="text" id="sujet" name="sujet"><br>
                                 <label for="message">Message *</label><br>
                                 <textarea name="message" id="message" cols="43" rows="3"></textarea><br>
-                                <button class="btn-border" type="submit"> Send </button>
+                                <button class="btn-border btn-color" type="submit"> Send </button>
                             </div>
                         </div>
                     </form>
@@ -164,33 +174,63 @@
         <footer>
             <section id="pages" class="centre">
                 <div>
-                    <h4>About vibes <hr class="h4"></h4>
+                    <h4>About vibes </h4>
+                    <hr class="h4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Fuga hic perferendis itaque quo tempore architecto. 
                         Pariatur ipsa eius ipsam obcaecati!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Illum, <a href="">exercitationem</a>.</p>
+                        Illum, <span class="couleur">exercitationem</span>.</p>
                 </div>
                 <div class="newsletter">
                     <h4>Newsletter <hr class="h4"></h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Nam quasi qui magnam minima. Ab, quis!</p>
                     <input type="email" placeholder="Your Email Adress">
-                    <button type="submit">Subscribe</button>
+                    <button class="btn-border btn-text-white" type="submit">Subscribe</button>
                 </div>
                 <div>
-                    <h4>Twitter feed <hr class="h4"></h4>
+                    <h4>Twitter feed </h4>
+                    <hr class="h4">
                     <div class="carre">
                         <i class="fas fa-square"></i>
                         <i class="fas fa-square"></i>
                         <i class="fas fa-square"></i>
                         <i class="fas fa-square"></i>
-                        <i class="fas fa-square rotate"></i>
+                        <i class="fas fa-square fa-spin"></i>
                     </div>
                 </div>
             </section>
             <section></section>
         </footer>
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script>
+
+    // Accordion
+
+        $('.toggle').click(function(e) {
+            e.preventDefault()
+        
+            var $this = $(this);
+        
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show')
+                $this.next().slideUp(350)
+                $this.find("#accordion-logo").attr("class","fas fa-plus couleur")
+            } else {
+                $this.parent().parent().find('.accordion-text').removeClass('show')
+                $this.find("#accordion-logo").attr("class","fas fa-plus couleur")
+                $this.parent().parent().find('.accordion-text').slideUp(350)
+                $this.next().toggleClass('show')
+                $this.find("#accordion-logo").attr("class","fas fa-minus couleur")
+                $this.next().slideToggle(350)
+            }
+        })
+
+    </script>
 </body>
 </html>
